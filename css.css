@@ -1,0 +1,36 @@
+#gyst {
+  width: 88px;
+  height: 88px;
+  margin: 23% auto 2% auto;
+}
+#wagmi {
+  width: 420px;
+  height: 30px;
+  text-align: center;
+  margin: 1% auto 0 auto;
+  font-variant: small-caps;
+  font-family: 'Mukta', sans-serif;
+}
+#telegram {
+  width: 420px;
+  height: 30px;
+  text-align: center;
+  margin: 12% auto 0 auto;
+  font-variant: small-caps;
+  font-family: 'Mukta', sans-serif;
+}
+#address {
+  width: 420px;
+  height: 30px;
+  text-align: center;
+  margin: 1% auto 0 auto;
+  background-image: linear-gradient(60deg,rgba(239,0,143,.5),rgba(110,195,244,.5),rgba(112,56,255,.5),rgba(255,186,39,.5));
+  animation: hue 4s infinite alternate;
+  background-size: 800% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-variant: small-caps;
+  font-weight: 600;
+  font-family: 'Mukta', sans-serif;
+}
+@keyframes hue{0%{-webkit-filter:hue-rotate(0deg);}to{-webkit-filter:hue-rotate(-1turn)}}

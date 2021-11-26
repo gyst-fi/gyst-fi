@@ -15,7 +15,10 @@
   text-align: left;
 }
 .gyst-box {
-  padding-left: 8rem;
+  margin: auto;
+  max-width: 40%;
+  min-width: 130px;
+;
 }
 .gyst-row {
   padding-bottom: 12rem;

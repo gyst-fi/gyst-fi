@@ -1,32 +1,104 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <title>gyst.fi</title>
+<head>
+  <meta charset="utf-8">
+  <title>Skeleton: Responsive CSS Boilerplate</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap" rel="stylesheet"> 
- </head>
- <body>
-   <div>
-     <div id="gyst">
-       <span>𝑮𝑬𝑻</span><br>
-       <span>𝒀𝑶𝑼𝑹</span><br>
-       <span>𝑺𝑯𝑰𝑻</span><br>
-       <span>𝑻𝑶𝑮𝑬𝑻𝑯𝑬𝑹</span><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body class="code-snippets-visible">
+  <div class="container">
+    <section class="header">
+      <div class="gyst-row row">
+        <div class="five columns">
+          <div class="gyst-box">
+            <h4 class="gyst">𝑮𝑬𝑻</h4>
+            <h4 class="gyst">𝒀𝑶𝑼𝑹</h4>
+            <h4 class="gyst">𝑺𝑯𝑰𝑻</h4>
+            <h4 class="gyst">𝑻𝑶𝑮𝑬𝑻𝑯𝑬𝑹</h4>
+          </div>
+        </div>
+        <div class="seven columns">
+          <h3>Hold <strong id="GYST">$GYST</strong> and earn passive income paid in <strong>BTC</strong> & <strong>ETH</strong></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-half column">
+          <a class="button button-primary" href="https://poocoin.app/tokens/0x3222a631131189eb815c00f1c044d0e040037170" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">PooCoin</a>
+        </div>
+        <div class="one-half column">
+          <a class="button button-primary" href="https://pancakeswap.finance/swap?outputCurrency=0x3222a631131189eb815c00f1c044d0e040037170" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">PancakeSwap</a>
+        </div>
+      </div>
+    </section>
+    <div class="section" id="tokenomics">
+      <h4 class="section-header">Tokenomics</h4>
+      <div class="row">
+        <div class="one-half column">
+          <div class="one-half column tokenomics-content">
+            <h5>BTC Reflections</h5>
+            <p>2.5% of all sales are distributed to holders of GYST as BTC</p>
+          </div>
+          <div class="one-half column tokenomics-content">
+            <h5>ETH Reflections</h5>
+            <p>2.5% of all sales are distributed to holders of GYST as ETH</p>
+          </div>
+        </div>
+        <div class="one-half column">
+          <div class="one-half column tokenomics-content">
+            <h5>Liquidity Burn</h5>
+            <p>2% of all sales are added to liquidity and burnt, increasing the price floor of GYST</p>
+          </div>
+          <div class="one-half column tokenomics-content">
+            <h5>Marketing & Dev</h5>
+            <p>1% of all sales are sent to a marketing wallet where the funds are used for promotion and airdrops</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-half column tokenomics-content">
+          <h5>Renounced Ownership</h5>
+          <p>To prevent manipulation of tax fees or dividends, ownership of the contract was renounced</p>
+        </div>
+        <div class="one-half column tokenomics-content">
+          <h5>Lucky Total Supply</h5>
+          <p>888,888,888,888,888 GYST</p>
+        </div>
+      </div>
     </div>
-    <div id="telegram">
-    <a href="https://t.me/gyst_fi" target="_blank">
-    <svg width="24px" height="24px" viewBox="0 0 24 24" role="img"><path d="M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7l-5.45-1.7c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z"/>
-    </a>
-    </svg>
-    </div>
-    <div id="wagmi">
-     <span>hold $gyst and earn passive income paid in btc & eth</span>
-    </div>
-    <div id="address">
-     <span>0x3222a631131189eb815c00f1c044d0e040037170</span>
+    <div class="section" id="connect">
+      <h4 class="section-header">Connect</h4>
+      <div class="row">
+        <div class="one-half column tokenomics-content">
+          <h5>Telegram</h5>
+          <a href="https://t.me/gyst_fi" target="_blank">
+            <input type="submit" value="Join">
+          </a>
+        </div>
+        <div class="one-half column tokenomics-content">
+          <h5>Twitter</h5>
+          <a href="https://twitter.com/gystfi" target="_blank">
+            <input type="submit" value="Follow">
+          </a>
+        </div>
+      </div>
     </div>
   </div>
- </body>
+</body>
 </html>

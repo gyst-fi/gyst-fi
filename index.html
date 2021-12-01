@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css.css">
 
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+  <script src="js/GetStats.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -40,13 +42,27 @@
       </div>
       <div class="row">
         <div class="one-half column">
-          <a class="button button-primary" target=”_blank” href="https://poocoin.app/tokens/0x3222a631131189eb815c00f1c044d0e040037170" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">PooCoin</a>
+          <a class="button button-primary" href="https://poocoin.app/tokens/0x3222a631131189eb815c00f1c044d0e040037170" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">PooCoin</a>
         </div>
         <div class="one-half column">
-          <a class="button button-primary" target=”_blank” href="https://pancakeswap.finance/swap?outputCurrency=0x3222a631131189eb815c00f1c044d0e040037170" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">PancakeSwap</a>
+          <a class="button button-primary" href="https://pancakeswap.finance/swap?outputCurrency=0x3222a631131189eb815c00f1c044d0e040037170" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">PancakeSwap</a>
         </div>
       </div>
     </section>
+    <div class="section" id="stats">
+      <div class="row">
+        <div class="one-half column stats-content">
+          <h4>Total ETH paid</h4>
+          <h5 id="totalETHDividends">. . .</h5>
+          <h5 id="totalETHDividendsUSD">. . .</h5>
+        </div>
+        <div class="one-half column stats-content">
+          <h4>Total BTC paid</h4>
+          <h5 id="totalBTCDividends">. . .</h5>
+          <h5 id="totalBTCDividendsUSD">. . .</h5>
+        </div>
+      </div>
+    </div>
     <div class="section" id="tokenomics">
       <h4 class="section-header">Tokenomics</h4>
       <div class="row">
@@ -67,7 +83,7 @@
           </div>
           <div class="one-half column tokenomics-content">
             <h5>Marketing & Dev</h5>
-            <p>1% of all sales are sent to a marketing wallet where the funds are used for promotion, airdrops, and buybacks</p>
+            <p>1% of all sales are sent to a marketing wallet where the funds are used for promotion and airdrops</p>
           </div>
         </div>
       </div>

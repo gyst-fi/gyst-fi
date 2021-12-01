@@ -10,6 +10,15 @@
 .tokenomics-content{
   text-align: center;
 }
+.stats-content{
+  text-align: center;
+}
+.stats-content h4{
+  line-height: 0.9;
+}
+.stats-content h5{
+  line-height: 0.7;
+}
 .gyst {
   line-height: 0.35;
   text-align: left;
